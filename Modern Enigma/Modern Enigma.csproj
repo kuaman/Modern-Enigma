@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <RootNamespace>Modern_Enigma</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyVersion>0.2.0.0</AssemblyVersion>
+    <FileVersion>0.2.0.0</FileVersion>
+    <Authors>김민서</Authors>
+    <Version>0.2.0</Version>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon_256.ico</ApplicationIcon>
+    <NeutralLanguage>ko-KR</NeutralLanguage>
+    <Description>Visual encryption tools at the operating system level using fonts</Description>
+    <Copyright>Copyright ⓒ 2024. 김민서</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resouces\**" />
+    <EmbeddedResource Remove="Resouces\**" />
+    <None Remove="Resouces\**" />
+    <Page Remove="Resouces\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Icon_256.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
